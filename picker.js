@@ -1,8 +1,8 @@
 class Picker {
   constructor() {
     // This is a singleton.
-    if(thePicker) {
-      return thePicker;
+    if(Picker.instance) {
+      return Picker.instance;
     }
 
     this.date = new Date();
@@ -283,6 +283,6 @@ class Picker {
   }
 }
 
-const thePicker = new Picker();
+Picker.instance = null;
 
-export default thePicker;
+export default Picker;

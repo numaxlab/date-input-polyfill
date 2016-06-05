@@ -1,4 +1,4 @@
-import thePicker from './picker.js';
+import Picker from './picker.js';
 import locales from './locales.js';
 
 export default class Input {
@@ -57,7 +57,7 @@ export default class Input {
     // Open the picker when the input get focus,
     // also on various click events to capture it in all corner cases.
     const showPicker = ()=> {
-      thePicker.attachTo(this);
+      Picker.instance.attachTo(this);
     };
     this.element.addEventListener(`focus`, showPicker);
     this.element.addEventListener(`mousedown`, showPicker);
@@ -69,27 +69,27 @@ export default class Input {
 
       switch(e.keyCode) {
         case 27:
-          thePicker.hide();
+          Picker.instance.hide();
           break;
         case 38:
           if(this.element.valueAsDate) {
             date.setDate(this.element.valueAsDate.getDate() + 1);
             this.element.valueAsDate = date;
-            thePicker.pingInput();
+            Picker.instance.pingInput();
           }
           break;
         case 40:
           if(this.element.valueAsDate) {
             date.setDate(this.element.valueAsDate.getDate() - 1);
             this.element.valueAsDate = date;
-            thePicker.pingInput();
+            Picker.instance.pingInput();
           }
           break;
         default:
           break;
       }
 
-      thePicker.sync();
+      Picker.instance.sync();
     });
   }
 
