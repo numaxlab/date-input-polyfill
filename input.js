@@ -1,4 +1,4 @@
-import { thePicker } from './picker.js';
+import thePicker from './picker.js';
 import locales from './locales.js';
 
 export default class Input {
@@ -6,10 +6,20 @@ export default class Input {
     this.element = input;
     this.element.setAttribute(`data-has-picker`, ``);
 
-    this.locale =
-      this.element.getAttribute(`lang`)
-      || document.body.getAttribute(`lang`)
-      || `en`;
+    let langEl = this.element,
+        lang = ``;
+
+    while(langEl.parentNode) {
+      lang = langEl.getAttribute(`lang`);
+
+      if(lang) {
+        break;
+      }
+
+      langEl = langEl.parentNode;
+    }
+
+    this.locale = lang || `en`;
 
     this.localeText = this.getLocaleText();
 
@@ -47,7 +57,7 @@ export default class Input {
     // Open the picker when the input get focus,
     // also on various click events to capture it in all corner cases.
     const showPicker = ()=> {
-      thePicker.attachTo(this.element);
+      thePicker.attachTo(this);
     };
     this.element.addEventListener(`focus`, showPicker);
     this.element.addEventListener(`mousedown`, showPicker);
@@ -107,7 +117,10 @@ export default class Input {
     const notADateValue = `not-a-date`;
     input.setAttribute(`value`, notADateValue);
 
-    return !(input.value === notADateValue);
+    return (
+      !document.currentScript.hasAttribute(`data-nodep-date-input-polyfill-debug`)
+      && !(input.value === notADateValue)
+    );
   }
 
   // Will add the Picker to all inputs in the page.

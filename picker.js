@@ -137,13 +137,13 @@ class Picker {
 
     this.input = input;
     this.sync();
-    this.goto(this.input);
+    this.goto(this.input.element);
   }
 
   // Match picker date with input date.
   sync() {
-    if(this.input.valueAsDate) {
-      this.date = Picker.absoluteDate(this.input.valueAsDate);
+    if(this.input.element.valueAsDate) {
+      this.date = Picker.absoluteDate(this.input.element.valueAsDate);
     } else {
       this.date = new Date();
     }
@@ -155,8 +155,8 @@ class Picker {
 
   // Match input date with picker date.
   setInput() {
-    this.input.valueAsDate = this.date;
-    this.input.focus();
+    this.input.element.valueAsDate = this.date;
+    this.input.element.focus();
     setTimeout(()=> { // IE wouldn't hide, so in a timeout you go.
       this.hide();
     }, 100);
@@ -200,7 +200,7 @@ class Picker {
     ).getDate(); // Get days in month (1-31).
 
     // The input's current date.
-    const selDate = Picker.absoluteDate(this.input.valueAsDate) || false;
+    const selDate = Picker.absoluteDate(this.input.element.valueAsDate) || false;
 
     // Are we in the input's currently-selected month and year?
     const selMatrix =
@@ -258,8 +258,8 @@ class Picker {
       changeEvent.initEvent(`change`, true, false);
     }
 
-    this.input.dispatchEvent(inputEvent);
-    this.input.dispatchEvent(changeEvent);
+    this.input.element.dispatchEvent(inputEvent);
+    this.input.element.dispatchEvent(changeEvent);
   }
 
   static createRangeSelect(theSelect, min, max, namesArray) {

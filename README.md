@@ -31,9 +31,14 @@ They behave as getters and setters.
 increment/decrement the date by one day.
 
 * **Localization:** Specify the datepicker's locale by setting the
-`lang` attribute of the `input` element.  The default locale is `en`.
+`lang` attribute of the `<input>` or any of its parent nodes.
+
+    The default locale is `en`.
 
     `<input type="date" lang="en" />`
+
+    `<body lang="en">`
+
 
 ## Contributing
 
