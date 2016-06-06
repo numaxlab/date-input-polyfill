@@ -47,3 +47,6 @@ Run `npm start` or, for Cloud9 IDE users: `npm run start-c9`
 
 ### Build
 Run `npm run build`
+
+### Localization
+Please submit PRs with new localizations! Open locales.js to add more.  File an issue on GitHub if anything is unclear.
