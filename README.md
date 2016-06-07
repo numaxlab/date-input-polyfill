@@ -39,6 +39,7 @@ increment/decrement the date by one day.
 
     `<body lang="en">`
 
+   Currently supported locales include English, Chinese (Simplified / Simplified Informal / Traditional), German, and Danish.
 
 ## Contributing
 
