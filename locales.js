@@ -109,13 +109,13 @@ const locales = {
   /* German (Germany) */
   'de_de-DE': {
     days: [
-      `Sonntag`,
-      `Montag`,
-      `Dienstag`,
-      `Mittwoch`,
-      `Donnerstag`,
-      `Freitag`,
-      `Samstag`
+      `So`,
+      `Mo`,
+      `Di`,
+      `Mi`,
+      `Do`,
+      `Fr`,
+      `Sa`
     ],
     months: [
       `Januar`,
@@ -132,27 +132,28 @@ const locales = {
       `Dezember`
     ]
   },
-  'test_test-TEST': {
+  /* Danish */
+  'da_da-DA': {
     days: [
-      `Foo`,
-      `Mon`,
-      `Tue`,
-      `Wed`,
-      `Thu`,
-      `Fri`,
-      `Sat`
+      `Søn`,
+      `Man`,
+      `Tirs`,
+      `Ons`,
+      `Tors`,
+      `Fre`,
+      `Lør`
     ],
     months: [
-      `Foo`,
-      `February`,
-      `March`,
+      `Januar`,
+      `Februar`,
+      `Marts`,
       `April`,
-      `May`,
-      `June`,
-      `July`,
+      `Maj`,
+      `Juni`,
+      `Juli`,
       `August`,
       `September`,
-      `October`,
+      `Oktober`,
       `November`,
       `December`
     ]
