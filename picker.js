@@ -183,6 +183,8 @@ class Picker {
       11,
       this.input.localeText.months
     );
+
+    this.today.textContent = this.input.localeText.today;
   }
 
   refreshDaysMatrix() {

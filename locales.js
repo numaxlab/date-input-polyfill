@@ -26,7 +26,8 @@ const locales = {
       `October`,
       `November`,
       `December`
-    ]
+    ],
+    today: `Today`
   },
   /* Simplified Chinese */
   'zh_zh-CN': {
@@ -52,7 +53,8 @@ const locales = {
       `十月`,
       `十一月`,
       `十二月`
-    ]
+    ],
+    today: `今天`
   },
   /* Simplified Chinese, informal*/
   'zh-Hans_zh-Hans-CN': {
@@ -78,7 +80,8 @@ const locales = {
       `十月`,
       `十一月`,
       `十二月`
-    ]
+    ],
+    today: `今天`
   },
   /* Traditional Chinese */
   'zh-Hant_zh-Hant-TW': {
@@ -104,7 +107,8 @@ const locales = {
       `十月`,
       `十一月`,
       `十二月`
-    ]
+    ],
+    today: `今天`
   },
   /* German (Germany) */
   'de_de-DE': {
@@ -130,7 +134,8 @@ const locales = {
       `Oktober`,
       `November`,
       `Dezember`
-    ]
+    ],
+    today: `Heute`
   },
   /* Danish */
   'da_da-DA': {
@@ -156,7 +161,8 @@ const locales = {
       `Oktober`,
       `November`,
       `December`
-    ]
+    ],
+    today: `I dag`
   },
   /* Spanish */
   'es': {
@@ -182,7 +188,8 @@ const locales = {
       `Octubre`,
       `Noviembre`,
       `Diciembre`
-    ]
+    ],
+    today: `Hoy`
   },
   /* Hindi */
   'hi': {
@@ -208,7 +215,8 @@ const locales = {
       `आक्टोबर`,
       `नवम्बर`,
       `दिसम्बर`
-    ]
+    ],
+    today: `आज`
   }
 };
 
