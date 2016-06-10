@@ -217,6 +217,33 @@ const locales = {
       `दिसम्बर`
     ],
     today: `आज`
+  },
+  /* Portuguese */
+  'pt': {
+    days: [
+      `Dom`,
+      `Seg`,
+      `Ter`,
+      `Qua`,
+      `Qui`,
+      `Sex`,
+      `Sáb`
+    ],
+    months: [
+      `Janeiro`,
+      `Fevereiro`,
+      `Março`,
+      `Abril`,
+      `Maio`,
+      `Junho`,
+      `Julho`,
+      `Agosto`,
+      `Setembro`,
+      `Outubro`,
+      `Novembro`,
+      `Dezembro`
+    ],
+    today: `Hoje`
   }
 };
 
