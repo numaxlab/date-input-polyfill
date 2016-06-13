@@ -118,7 +118,10 @@ export default class Input {
     input.setAttribute(`value`, notADateValue);
 
     return (
-      !document.currentScript.hasAttribute(`data-nodep-date-input-polyfill-debug`)
+      (
+        document.currentScript
+        && !document.currentScript.hasAttribute(`data-nodep-date-input-polyfill-debug`)
+      )
       && !(input.value === notADateValue)
     );
   }
