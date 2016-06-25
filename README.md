@@ -6,6 +6,9 @@ Support dynamically created inputs, so can be used in single page applications.
 Forked from [html5-simple-date-input-polyfill](https://www.npmjs.com/package/html5-simple-date-input-polyfill). Continuing as a separate project.
 
 ## Install
+
+### NPM
+
 `npm install --save nodep-date-input-polyfill`
 
 Add to your project:
@@ -18,6 +21,10 @@ Add to your project:
 include it anywhere in your HTML.
 
 * This package also supports **AMD**.
+
+### Bower
+
+`bower install nodep-date-input-polyfill`
 
 ## Features
 * **Easily Stylable:** [These are the default styles](https://github.com/brianblakely/nodep-date-input-polyfill/blob/master/nodep-date-input-polyfill.scss),
