@@ -33,10 +33,18 @@ export default class Input {
             }
 
             const val = this.element.value.split(/\D/);
-            return new Date(`${val[0]}-${`0${val[1]}`.slice(-2)}-${`0${val[2]}`.slice(-2)}`);
+
+            const fmt = this.localeText.format.split(/\W/);
+
+            return new Date(`${val[fmt.indexOf(`Y`)]}-${val[fmt.indexOf(`M`)]}-${val[fmt.indexOf(`D`)]}`);
           },
           set: val=> {
-            this.element.value = val.toISOString().slice(0,10);
+            const YMD = val.toISOString().slice(0,10).split(`-`);
+
+            this.element.value = this.localeText.format
+              .replace(`Y`, YMD[0])
+              .replace(`M`, YMD[1])
+              .replace(`D`, YMD[2]);
           }
         },
         'valueAsNumber': {

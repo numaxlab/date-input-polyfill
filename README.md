@@ -40,13 +40,16 @@ increment/decrement the date by one day.
 * **Localization:** Specify the datepicker's locale by setting the
 `lang` attribute of the `<input>` or any of its parent nodes.
 
-    The default locale is `en`.
-
     `<input type="date" lang="en" />`
 
     `<body lang="en">`
 
-   Currently supported locales include English, Chinese (Simplified / Simplified Informal / Traditional), Japanese, Spanish, Portuguese, Hindi, German, and Danish.
+    The default locale is `en`.
+
+    The rendered date format will automatically adhere to the given locale.
+
+    Currently supported locales include English, Chinese (Simplified / Simplified Informal / Traditional), Japanese, Spanish, Portuguese, Hindi, German, and Danish.
+
 
 ## Contributing
 

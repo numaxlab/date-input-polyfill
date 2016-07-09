@@ -3,7 +3,7 @@
 // Days and months must be listed in the order they should display.
 
 const locales = {
-  'en_en-US_en-UK': {
+  'en_en-US': {
     days: [
       `Sun`,
       `Mon`,
@@ -27,7 +27,35 @@ const locales = {
       `November`,
       `December`
     ],
-    today: `Today`
+    today: `Today`,
+    format: `M/D/Y`
+  },
+  'en-GB': {
+    days: [
+      `Sun`,
+      `Mon`,
+      `Tue`,
+      `Wed`,
+      `Thu`,
+      `Fri`,
+      `Sat`
+    ],
+    months: [
+      `January`,
+      `February`,
+      `March`,
+      `April`,
+      `May`,
+      `June`,
+      `July`,
+      `August`,
+      `September`,
+      `October`,
+      `November`,
+      `December`
+    ],
+    today: `Today`,
+    format: `D/M/Y`
   },
   /* Simplified Chinese */
   'zh_zh-CN': {
@@ -54,7 +82,8 @@ const locales = {
       `十一月`,
       `十二月`
     ],
-    today: `今天`
+    today: `今天`,
+    format: `Y/M/D`
   },
   /* Simplified Chinese, informal*/
   'zh-Hans_zh-Hans-CN': {
@@ -81,7 +110,8 @@ const locales = {
       `十一月`,
       `十二月`
     ],
-    today: `今天`
+    today: `今天`,
+    format: `Y/M/D`
   },
   /* Traditional Chinese */
   'zh-Hant_zh-Hant-TW': {
@@ -108,7 +138,8 @@ const locales = {
       `十一月`,
       `十二月`
     ],
-    today: `今天`
+    today: `今天`,
+    format: `Y/M/D`
   },
   /* German (Germany) */
   'de_de-DE': {
@@ -135,7 +166,8 @@ const locales = {
       `November`,
       `Dezember`
     ],
-    today: `Heute`
+    today: `Heute`,
+    format: `D.M.Y`
   },
   /* Danish */
   'da_da-DA': {
@@ -162,7 +194,8 @@ const locales = {
       `November`,
       `December`
     ],
-    today: `I dag`
+    today: `I dag`,
+    format: `D/M/Y`
   },
   /* Spanish */
   'es': {
@@ -189,7 +222,8 @@ const locales = {
       `Noviembre`,
       `Diciembre`
     ],
-    today: `Hoy`
+    today: `Hoy`,
+    format: `D/M/Y`
   },
   /* Hindi */
   'hi': {
@@ -216,7 +250,8 @@ const locales = {
       `नवम्बर`,
       `दिसम्बर`
     ],
-    today: `आज`
+    today: `आज`,
+    format: `D/M/Y`
   },
   /* Portuguese */
   'pt': {
@@ -243,7 +278,8 @@ const locales = {
       `Novembro`,
       `Dezembro`
     ],
-    today: `Hoje`
+    today: `Hoje`,
+    format: `D/M/Y`
   },
   /* Japanese */
   'ja': {
@@ -270,7 +306,8 @@ const locales = {
       `十一月`,
       `十二月`
     ],
-    today: `今日`
+    today: `今日`,
+    format: `Y/M/D`
   }
 };
 
