@@ -43,14 +43,15 @@ date-input-polyfill {
   }
 
   select {
-    width: 55%;
+    width: 50%;
 
     &:first-of-type {
       border-right: 1px solid #E0E0E0;
-      width: 25%;
+      width: 30%;
     }
   }
   button {
+    padding: 0;
     width: 20%;
     background: #E0E0E0;
   }

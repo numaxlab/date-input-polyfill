@@ -181,7 +181,8 @@ class Picker {
       this.month,
       0,
       11,
-      this.input.localeText.months
+      this.input.localeText.months,
+      this.date.getMonth()
     );
 
     this.today.textContent = this.input.localeText.today;
@@ -264,7 +265,7 @@ class Picker {
     this.input.element.dispatchEvent(changeEvent);
   }
 
-  static createRangeSelect(theSelect, min, max, namesArray) {
+  static createRangeSelect(theSelect, min, max, namesArray, selectedValue) {
     theSelect.innerHTML = ``;
 
     for(let i = min; i <= max; ++i) {
@@ -275,6 +276,10 @@ class Picker {
 
       aOption.text = theText;
       aOption.value = i;
+
+      if(i === selectedValue) {
+        aOption.selected = `selected`;
+      }
     }
 
     return theSelect;
