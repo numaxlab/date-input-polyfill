@@ -29,6 +29,9 @@
         "try": {
           "after": true
         },
+        "const": {
+          "after": true
+        },
         "return": {
           "after": true
         }
@@ -39,7 +42,6 @@
     "no-console": ["warn", {
       "allow": ["warn", "error"]
     }],
-    "no-console": "warn",
     "no-var": "error",
     "object-shorthand": "error",
     "prefer-const": "error",
@@ -51,6 +53,7 @@
     "browser": true,
     "es6": true,
     "commonjs": true,
+    "jquery": true,
     "node": true
   },
   "parserOptions": {
