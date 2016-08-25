@@ -4,8 +4,8 @@
   "description": "Automatically adds datepickers to input[type=date] on IE, Firefox, and OS X Safari.",
   "main": "nodep-date-input-polyfill.dist.js",
   "scripts": {
-    "start": "webpack-dev-server",
-    "start-c9": "webpack-dev-server --host $IP --port $PORT",
+    "start": "webpack-dev-server --colors --inline",
+    "start-c9": "webpack-dev-server --colors --host $IP --port $PORT",
     "build": "webpack --devtool=none --optimize-minimize --optimize-occurence-order --optimize-dedupe --progress",
     "test": "mocha --compilers js:babel-core/register"
   },

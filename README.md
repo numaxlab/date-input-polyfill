@@ -50,6 +50,15 @@ increment/decrement the date by one day.
 
     Currently supported locales include English, Chinese (Simplified / Simplified Informal / Traditional), Japanese, Spanish, Portuguese, Hindi, German, and Danish.
 
+## Usage Notes
+
+`getAttribute` and `setAttribute` will only reflect the input's text content.
+
+In order to work with the input's underlying value, you must get/set its
+`value`, `valueAsDate`, and `valueAsNumber` properties.
+
+Per the native implementation, polyfilled date inputs will only accept
+values in the format `YYYY-MM-DD`.
 
 ## Contributing
 

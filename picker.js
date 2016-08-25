@@ -41,16 +41,8 @@ class Picker {
     this.today = document.createElement(`button`);
     this.today.textContent = `Today`;
     this.today.addEventListener(`click`, ()=> {
-      const today = new Date();
-      this.date = new Date(
-        `${
-          today.getFullYear()
-        }/${
-          `0${today.getMonth()+1}`.slice(-2)
-        }/${
-          `0${today.getDate()}`.slice(-2)
-        }`
-      );
+      this.date = new Date();
+
       this.setInput();
     });
     this.container.appendChild(this.today);
@@ -155,7 +147,15 @@ class Picker {
 
   // Match input date with picker date.
   setInput() {
-    this.input.element.valueAsDate = this.date;
+    this.input.element.value =
+      `${
+        this.date.getFullYear()
+      }-${
+        `0${this.date.getMonth()+1}`.slice(-2)
+      }-${
+        `0${this.date.getDate()}`.slice(-2)
+      }`;
+
     this.input.element.focus();
     setTimeout(()=> { // IE wouldn't hide, so in a timeout you go.
       this.hide();
