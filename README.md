@@ -55,7 +55,7 @@ increment/decrement the date by one day.
 `getAttribute` and `setAttribute` will only reflect the input's text content.
 
 In order to work with the input's underlying value, you must get/set its
-`value`, `valueAsDate`, and `valueAsNumber` properties.
+`value`, `valueAsDate`, or `valueAsNumber` properties.
 
 Per the native implementation, polyfilled date inputs will only accept
 values in the format `YYYY-MM-DD`.
