@@ -29,6 +29,12 @@
         "try": {
           "after": true
         },
+        "const": {
+          "after": true
+        },
+        "case": {
+          "after": true
+        },
         "return": {
           "after": true
         }
@@ -39,7 +45,6 @@
     "no-console": ["warn", {
       "allow": ["warn", "error"]
     }],
-    "no-console": "warn",
     "no-var": "error",
     "object-shorthand": "error",
     "prefer-const": "error",
