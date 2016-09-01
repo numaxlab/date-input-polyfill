@@ -6,9 +6,9 @@ Support dynamically created inputs, so can be used in single page applications.
 
 Forked from [html5-simple-date-input-polyfill](https://www.npmjs.com/package/html5-simple-date-input-polyfill). Continuing as a separate project.
 
-## [Demo](https://brianblakely.github.io/nodep-date-input-polyfill/)
+## Demo
 
-Try it IE, Firefox, and macOS Safari.
+[Try it IE, Firefox, and macOS Safari.](https://brianblakely.github.io/nodep-date-input-polyfill/)
 
 ## Install
 
