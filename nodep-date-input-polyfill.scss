@@ -76,3 +76,9 @@ date-input-polyfill {
     background: #D8EAF6;
   }
 }
+
+input[data-has-picker] {
+  &::-ms-clear {
+    display: none;
+  }
+}
