@@ -308,6 +308,34 @@ const locales = {
     ],
     today: `今日`,
     format: `Y/M/D`
+  },
+  /* Dutch */
+  'nl_nl-NL_nl-BE': {
+    days: [
+      `Zondag`,
+      `Maandag`,
+      `Dinsdag`,
+      `Woensdag`,
+      `Donderdag`,
+      `Vrijdag`,
+      `Zaterdag`
+    ],
+    months: [
+      `Januari`,
+      `Februari`,
+      `Maart`,
+      `April`,
+      `Mei`,
+      `Juni`,
+      `Juli`,
+      `Augustus`,
+      `September`,
+      `Oktober`,
+      `November`,
+      `December`
+    ],
+    today: `Vandaag`,
+    format: `D/M/Y`
   }
 };
 
