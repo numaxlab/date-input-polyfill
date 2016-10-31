@@ -53,7 +53,7 @@ increment/decrement the date by one day.
 
     The rendered date format will automatically adhere to the given locale.
 
-    Currently supported locales include English, Chinese (Simplified / Simplified Informal / Traditional), Japanese, Spanish, Portuguese, Hindi, German, Danish, and Turkish.
+    Currently supported locales include English, Chinese (Simplified / Simplified Informal / Traditional), Japanese, Spanish, Portuguese, Hindi, German, Dutch, Danish, and Turkish.
 
 ## Usage Notes
 
