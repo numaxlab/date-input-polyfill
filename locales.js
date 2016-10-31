@@ -336,6 +336,34 @@ const locales = {
     ],
     today: `Vandaag`,
     format: `D/M/Y`
+  },
+  /* Turkish */
+  'tr_tr-TR': {
+    days: [
+      `Pzr`,
+      `Pzt`,
+      `Sal`,
+      `Çrş`,
+      `Prş`,
+      `Cum`,
+      `Cmt`
+    ],
+    months: [
+      `Ocak`,
+      `Şubat`,
+      `Mart`,
+      `Nisan`,
+      `Mayıs`,
+      `Haziran`,
+      `Temmuz`,
+      `Ağustos`,
+      `Eylül`,
+      `Ekim`,
+      `Kasım`,
+      `Aralık`
+    ],
+    today: `Bugün`,
+    format: `D/M/Y`
   }
 };
 
