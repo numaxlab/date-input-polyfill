@@ -8,7 +8,7 @@ Forked from [html5-simple-date-input-polyfill](https://www.npmjs.com/package/htm
 
 ## Demo
 
-[Try it IE, Firefox, and macOS Safari.](https://brianblakely.github.io/nodep-date-input-polyfill/)
+[Try it in IE, Firefox, and macOS Safari.](https://brianblakely.github.io/nodep-date-input-polyfill/)
 
 ## Install
 
