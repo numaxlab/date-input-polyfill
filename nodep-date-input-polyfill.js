@@ -16,17 +16,21 @@ if(!Input.supportsDateInput()) {
     });
   };
 
-  let DOMContentLoaded = false;
-
-  document.addEventListener(`DOMContentLoaded`, ()=> {
-    DOMContentLoaded = true;
-
+  if (document.readyState === 'complete') {
     init();
-  });
+  } else {
+    let DOMContentLoaded = false;
 
-  window.addEventListener(`load`, ()=> {
-    if(!DOMContentLoaded) {
+    document.addEventListener(`DOMContentLoaded`, ()=> {
+      DOMContentLoaded = true;
+
       init();
-    }
-  });
+    });
+
+    window.addEventListener(`load`, ()=> {
+      if(!DOMContentLoaded) {
+        init();
+      }
+    });
+  }
 }
