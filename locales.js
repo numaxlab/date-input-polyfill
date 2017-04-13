@@ -365,6 +365,34 @@ const locales = {
     today: `Bugün`,
     format: `D/M/Y`
   },
+  /* French */
+  'fr_fr-FR': {
+    days: [
+      `Dim`,
+      `Lun`,
+      `Mar`,
+      `Mer`,
+      `Jeu`,
+      `Ven`,
+      `Sam`
+    ],
+    months: [
+      `Janvier`,
+      `Février`,
+      `Mars`,
+      `Avril`,
+      `Mai`,
+      `Juin`,
+      `Juillet`,
+      `Août`,
+      `Septembre`,
+      `Octobre`,
+      `Novembre`,
+      `Décembre`
+    ],
+    today: `Auj.`,
+    format: `D/M/Y`
+  },
   /* Ukrainian */
   'uk_uk-UA': {
     days: [
