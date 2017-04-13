@@ -166,7 +166,7 @@ export default class Input {
   // Will add the Picker to all inputs in the page.
   static addPickerToDateInputs() {
     // Get and loop all the input[type="date"]s in the page that do not have `[data-has-picker]` yet.
-    const dateInputs = document.querySelectorAll(`input[type="date"]:not([data-has-picker])`);
+    const dateInputs = document.querySelectorAll(`input[type="date"]:not([data-has-picker]):not([readonly])`);
     const length = dateInputs.length;
 
     if(!length) {
