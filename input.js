@@ -119,17 +119,31 @@ export default class Input {
   getLocaleText() {
     const locale = this.locale.toLowerCase();
 
-    for(const localeSet in locales) {
-      const localeList = localeSet.split(`_`);
-      localeList.map(el=>el.toLowerCase());
+    // First, look for an exact match to the provided locale.
 
-      if(
-        !!~localeList.indexOf(locale)
-        || !!~localeList.indexOf(locale.substr(0,2))
-      ) {
+    for(const localeSet in locales) {
+      const localeList = localeSet.split(`_`).map(el=>el.toLowerCase());
+
+      if(!!~localeList.indexOf(locale)) {
         return locales[localeSet];
       }
     }
+
+    // If not found, look for a match to only the language.
+
+    for(const localeSet in locales) {
+      const localeList = localeSet.split(`_`).map(el=>el.toLowerCase());
+
+      if(!!~localeList.indexOf(locale.substr(0,2))) {
+        return locales[localeSet];
+      }
+    }
+
+    // If still not found, reassign locale to English and rematch.
+
+    this.locale = `en`;
+
+    return this.getLocaleText();
   }
 
   // Return false if the browser does not support input[type="date"].
