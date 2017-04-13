@@ -16,7 +16,7 @@ if(!Input.supportsDateInput()) {
     });
   };
 
-  if (document.readyState === 'complete') {
+  if(document.readyState === `complete`) {
     init();
   } else {
     let DOMContentLoaded = false;
