@@ -31,6 +31,7 @@ export default class Input {
           set: val=> {
             if(!/^\d{4}-\d{2}-\d{2}$/.test(val)) {
               this.element.polyfillValue = ``;
+              this.element.setAttribute(`value`, ``);
               return false;
             }
 
