@@ -420,6 +420,34 @@ const locales = {
     ],
     today: `Сьогодні`,
     format: `D.M.Y`
+  },
+  /* Italian */
+  'it': {
+    days: [
+      `Dom`,
+      `Lun`,
+      `Mar`,
+      `Mer`,
+      `Gio`,
+      `Ven`,
+      `Sab`
+    ],
+    months: [
+      `Gennaio`,
+      `Febbraio`,
+      `Marzo`,
+      `Aprile`,
+      `Maggio`,
+      `Giugno`,
+      `Luglio`,
+      `Agosto`,
+      `Settembre`,
+      `ottobre`,
+      `Novembre`,
+      `Dicembre`
+    ],
+    today: `Oggi`,
+    format: `D/M/Y`
   }
 };
 
