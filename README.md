@@ -78,8 +78,10 @@ increment/decrement the date by one day.
     * Ukrainian
 
     * French
-    
+
     * Italian
+
+    * Polish
 
 ## Usage Notes
 

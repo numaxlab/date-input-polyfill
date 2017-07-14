@@ -448,6 +448,34 @@ const locales = {
     ],
     today: `Oggi`,
     format: `D/M/Y`
+  },
+  /* Polish */
+  'pl': {
+    days: [
+      `Nie`,
+      `Pon`,
+      `Wto`,
+      `Śro`,
+      `Czw`,
+      `Pt`,
+      `Sob`
+    ],
+    months: [
+      `Styczeń`,
+      `Luty`,
+      `Marzec`,
+      `Kwiecień`,
+      `Maj`,
+      `Czerwiec`,
+      `Lipiec`,
+      `Sierpień`,
+      `Wrzesień`,
+      `Październik`,
+      `Listopad`,
+      `Grudzień`
+    ],
+    today: `Dzisiaj`,
+    format: `D.M.Y`
   }
 };
 
