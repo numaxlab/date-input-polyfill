@@ -126,6 +126,6 @@ Please submit PRs with new localizations! Open `locales.js` to add more.
 File an issue on GitHub if anything is unclear.
 
 ## Thanks
-Somes words of appreciation for those who have submitted tickets, pull requests,
+Some words of appreciation for those who have submitted tickets, pull requests,
 and new localizations.  The library is more robust and helpful to everyone
 because of those who choose to help out.
