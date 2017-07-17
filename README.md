@@ -85,13 +85,33 @@ increment/decrement the date by one day.
 
 ## Usage Notes
 
-`getAttribute` and `setAttribute` will only reflect the input's text content.
+* `getAttribute` and `setAttribute` will only reflect the field's text content.
 
-In order to work with the input's underlying value, you must get/set its
+* In order to work with the field's underlying value, you must get/set its
 `value`, `valueAsDate`, or `valueAsNumber` properties.
 
-Per the native implementation, polyfilled date inputs will only accept
+* Per the native implementation, polyfilled date fields will only accept
 values in the format `yyyy-MM-dd`.
+
+* If a user dirties a date field by typing into it manually, the browser will no
+longer allow the polyfill to populate the field from the datepicker.
+
+    The polyfill will not attempt to solve this on its own.
+    One potential workaround that you may choose to adopt
+    is to prevent typing entirely:
+    ```js
+    el.addEventListener('keydown', (e)=> e.preventDefault());
+    ```
+
+* When submitting an HTML form, the browser will submit the date field's `value`
+attribute (i.e. its text content), not the normalized content of the field's
+`value` *property*.
+
+    If you don't want that, one potential workaround is to change
+    the attribute upon form submission:
+    ```js
+    el.form.addEventListener('submit', (e)=> el.setAttribute('value', el.value));
+    ```
 
 ## Contributing
 
@@ -102,4 +122,10 @@ Run `npm start` or, for Cloud9 IDE users: `npm run start-c9`
 Run `npm run build`
 
 ### Localization
-Please submit PRs with new localizations! Open `locales.js` to add more.  File an issue on GitHub if anything is unclear.
+Please submit PRs with new localizations! Open `locales.js` to add more.
+File an issue on GitHub if anything is unclear.
+
+## Thanks
+Somes words of appreciation for those who have submitted tickets, pull requests,
+and new localizations.  The library is more robust and helpful to everyone
+because of those who choose to help out.
