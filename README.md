@@ -18,9 +18,9 @@ Forked from [html5-simple-date-input-polyfill](https://www.npmjs.com/package/htm
 
 Add to your project:
 
-* **Webpack/Browserify:** `require('nodep-date-input-polyfill');`
+* **Webpack / Rollup / Babel / ES:** `import 'nodep-date-input-polyfill';`
 
-    or alongside **Babel:** `import 'nodep-date-input-polyfill';`
+* **Webpack 1 / Browserify:** `require('nodep-date-input-polyfill');`
 
 * **Script Tag:** Copy `nodep-date-input-polyfill.dist.js` from `node_modules` and
 include it anywhere in your HTML.
