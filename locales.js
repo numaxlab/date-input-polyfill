@@ -476,6 +476,34 @@ const locales = {
     ],
     today: `Dzisiaj`,
     format: `D.M.Y`
+  },
+  /* Czech */
+  'cs': {
+    days: [
+      `Po`,
+      `Út`,
+      `St`,
+      `Čt`,
+      `Pá`,
+      `So`,
+      `Ne`
+    ],
+    months: [
+      `Leden`,
+      `Únor`,
+      `Březen`,
+      `Duben`,
+      `Květen`,
+      `Červen`,
+      `Červenec`,
+      `Srpen`,
+      `Září`,
+      `Říjen`,
+      `Listopad`,
+      `Prosinec`
+    ],
+    today: `Dnes`,
+    format: `D.M.Y`
   }
 };
 
