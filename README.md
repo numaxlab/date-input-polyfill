@@ -85,6 +85,8 @@ increment/decrement the date by one day.
 
     * Czech
 
+    * Russian
+
 ## Usage Notes
 
 * `getAttribute` and `setAttribute` will only reflect the field's text content.
