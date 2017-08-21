@@ -1,5 +1,5 @@
 import babel from 'rollup-plugin-babel';
-import babili from 'rollup-plugin-babili';
+import minify from 'rollup-plugin-babel-minify';
 import sass from 'rollup-plugin-sass';
 
 export default {
@@ -13,7 +13,7 @@ export default {
       presets: [[`env`, {modules: false}]],
       plugins: [`external-helpers`]
     }),
-    babili({
+    minify({
       comments: false,
       sourceMap: false
     }),
