@@ -6,8 +6,7 @@
   "scripts": {
     "start": "rollup -c -w & httpster",
     "start-c9": "rollup -c -w & httpster -p $PORT",
-    "build": "rollup -c",
-    "test": "mocha --compilers js:babel-core/register"
+    "build": "rollup -c"
   },
   "author": {
     "name": "Brian Blakely",
@@ -33,10 +32,8 @@
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
-    "chai": "^4.1.2",
     "eslint": "^4.15.0",
     "httpster": "^1.0.3",
-    "mocha": "^4.1.0",
     "rollup": "^0.53.4",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-babel-minify": "^3.1.2",
