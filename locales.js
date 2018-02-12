@@ -312,13 +312,13 @@ const locales = {
   /* Dutch */
   'nl_nl-NL_nl-BE': {
     days: [
-      `Zondag`,
-      `Maandag`,
-      `Dinsdag`,
-      `Woensdag`,
-      `Donderdag`,
-      `Vrijdag`,
-      `Zaterdag`
+      `Zo`,
+      `Ma`,
+      `Di`,
+      `Wo`,
+      `Do`,
+      `Vr`,
+      `Za`
     ],
     months: [
       `Januari`,
