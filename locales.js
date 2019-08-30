@@ -248,7 +248,7 @@ const locales = {
       `Setembro`,
       `Outubro`,
       `Novembro`,
-      `Dicembro`
+      `Decembro`
     ],
     today: `Hoxe`,
     format: `D/M/Y`
