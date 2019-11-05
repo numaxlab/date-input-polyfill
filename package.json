@@ -1,22 +1,27 @@
 {
-  "name": "nodep-date-input-polyfill",
-  "version": "5.2.0",
-  "description": "Automatically adds datepickers to input[type=date] on IE, Firefox, and macOS Safari.",
+  "name": "@numaxlab/date-input-polyfill",
+  "version": "1.0.0",
+  "description": "Add datepicker to input[type=date] on IE, Firefox, and macOS Safari.",
   "main": "nodep-date-input-polyfill.dist.js",
   "scripts": {
     "start": "rollup -c -w & httpster",
     "start-c9": "rollup -c -w & httpster -p $PORT",
     "build": "rollup -c"
   },
-  "author": {
-    "name": "Brian Blakely",
-    "email": "anewpage.media@gmail.com"
-  },
+  "authors": [
+    {
+      "name": "Brian Blakely",
+      "email": "anewpage.media@gmail.com"
+    },
+    {
+      "name": "Adrian P. Blunier",
+      "email": "adrian@numax.org"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/brianblakely/nodep-date-input-polyfill.git"
+    "url": "https://github.com/numaxlab/date-input-polyfill"
   },
-  "bugs": "https://github.com/brianblakely/nodep-date-input-polyfill/issues",
   "keywords": [
     "html5",
     "light",
