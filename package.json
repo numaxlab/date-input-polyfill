@@ -1,6 +1,6 @@
 {
   "name": "@numaxlab/date-input-polyfill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add datepicker to input[type=date] on IE, Firefox, and macOS Safari.",
   "main": "nodep-date-input-polyfill.dist.js",
   "scripts": {
